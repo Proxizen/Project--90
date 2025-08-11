@@ -1,40 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Ndakima Holding – Client Intake / Saisie client</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 30px; background-color: #f9f9f9; color: #333; }
-    .container { max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { text-align: center; color: #005F73; }
-    label { display: block; margin-top: 20px; font-weight: bold; }
-    input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-    textarea { resize: vertical; }
-    button { background-color: #005F73; color: white; padding: 12px 20px; margin-top: 20px; border: none; border-radius: 4px; cursor: pointer; }
-    button:hover { background-color: #0a9396; }
-    small { display: block; font-size: 0.9em; color: #555; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ndakima_bilingual_form.css">
+    <title>Ndakima Holding – Client Intake / Saisie client</title>
+
 </head>
+
 <body>
-  <div class="container">
-    <h1>Ndakima Holding – Client Intake / Saisie client</h1>
-    <p>
-      <strong>EN:</strong> Please complete this form so we can assess your needs and get in touch quickly.<br>
-      <strong>FR:</strong> Veuillez remplir ce formulaire afin que nous puissions évaluer vos besoins et vous contacter rapidement.
-    </p>
-    <form action="#" method="post">
-      <label>Full Name / Nom complet</label>
-      <input type="text" name="full_name" required>
+    <div class="container">
+        <h1>Ndakima Holding – Client Intake / Saisie client</h1>
+        <p>
+            <strong>EN:</strong> Please complete this form so we can assess your needs and get in touch quickly.<br>
+            <strong>FR:</strong> Veuillez remplir ce formulaire afin que nous puissions évaluer vos besoins et vous contacter rapidement.
+        </p>
+        <form action="#" method="post">
+            <label>Full Name / Nom complet</label>
+            <input type="text" name="full_name" required>
 
-      <label>Phone number or WhatsApp / Numéro WhatsApp</label>
-      <input type="text" name="phone" required>
+            <label>Phone number or WhatsApp / Numéro WhatsApp</label>
+            <input type="text" name="phone" required>
 
-      <label>Country / Pays</label>
-      <input type="text" name="country" required>
+            <label>Country / Pays</label>
+            <input type="text" name="country" required>
 
-      <label>Type of product needed / Type de produit recherché</label>
-      <select name="product_type" required>
+            <label>Type of product needed / Type de produit recherché</label>
+            <select name="product_type" required>
         <option value="">-- Select / Choisissez --</option>
         <option value="clothes">Clothes / Vêtements</option>
         <option value="shoes">Shoes / Chaussures</option>
@@ -43,23 +36,24 @@
         <option value="other">Other / Autre</option>
       </select>
 
-      <label>Estimated quantity per month / Quantité mensuelle estimée</label>
-      <input type="text" name="quantity" required placeholder="e.g. 100 kg / ex : 100 kg">
+            <label>Estimated quantity per month / Quantité mensuelle estimée</label>
+            <input type="text" name="quantity" required placeholder="e.g. 100 kg / ex : 100 kg">
 
-      <label>Do you need custom branding or packaging? / Avez-vous besoin d’un emballage personnalisé ?</label>
-      <select name="custom_packaging" required>
+            <label>Do you need custom branding or packaging? / Avez-vous besoin d’un emballage personnalisé ?</label>
+            <select name="custom_packaging" required>
         <option value="yes">Yes / Oui</option>
         <option value="no">No / Non</option>
       </select>
 
-      <label>When do you want to start? / Quand souhaitez-vous commencer ?</label>
-      <input type="date" name="start_date" required>
+            <label>When do you want to start? / Quand souhaitez-vous commencer ?</label>
+            <input type="date" name="start_date" required>
 
-      <label>Additional notes (optional) / Informations supplémentaires (facultatif)</label>
-      <textarea name="additional_info" rows="4"></textarea>
+            <label>Additional notes (optional) / Informations supplémentaires (facultatif)</label>
+            <textarea name="additional_info" rows="4"></textarea>
 
-      <button type="submit">Submit / Envoyer</button>
-    </form>
-  </div>
+            <button type="submit">Submit / Envoyer</button>
+        </form>
+    </div>
 </body>
+
 </html>
